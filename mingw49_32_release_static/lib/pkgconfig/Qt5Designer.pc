@@ -1,0 +1,14 @@
+prefix=C:/Qt/5.6.3/mingw49_32_release_static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 Designer
+Description: Qt Designer module
+Version: 5.6.3
+Libs: -L${libdir} -lQt5Designerd 
+Libs.private: -LC:\Qt\5.6.3\Src\qtbase\lib C:\Qt\5.6.3\Src\qtbase\lib\libQt5Widgetsd.a -LC:\OpenSSL\openssl-1.0.2n_mingw492_32_static\lib C:\Qt\5.6.3\Src\qtbase\lib\libQt5Guid.a -lcomdlg32 -loleaut32 -limm32 -lwinmm -lglu32 -lopengl32 -lgdi32 C:\Qt\5.6.3\Src\qtbase\lib\libqtharfbuzzngd.a C:\Qt\5.6.3\Src\qtbase\lib\libQt5Xmld.a C:\Qt\5.6.3\Src\qtbase\lib\libQt5Cored.a -lole32 -luuid -lws2_32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmpr C:\Qt\5.6.3\Src\qtbase\lib\libqtpcred.a C:\Qt\5.6.3\Src\qtbase\lib\libQt5Widgetsd.a -LC:\Qt\5.6.3\Src\qtbase\lib -LC:\OpenSSL\openssl-1.0.2n_mingw492_32_static\lib C:\Qt\5.6.3\Src\qtbase\lib\libQt5Guid.a -lcomdlg32 -loleaut32 -limm32 -lwinmm -lglu32 -lopengl32 -lgdi32 C:\Qt\5.6.3\Src\qtbase\lib\libqtharfbuzzngd.a C:\Qt\5.6.3\Src\qtbase\lib\libQt5Cored.a -lole32 -luuid -lws2_32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmpr C:\Qt\5.6.3\Src\qtbase\lib\libqtpcred.a 
+Cflags: -I${includedir}/QtDesigner -I${includedir}
+Requires: Qt5Core Qt5Gui Qt5Widgets Qt5Xml Qt5UiPlugin
+

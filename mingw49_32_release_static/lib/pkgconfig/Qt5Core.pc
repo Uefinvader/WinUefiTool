@@ -1,0 +1,15 @@
+prefix=C:/Qt/5.6.3/mingw49_32_release_static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+host_bins=${prefix}/bin
+qt_config=minimal-config small-config medium-config large-config full-config release c++11 c++14 static zlib gif jpeg png freetype harfbuzz accessibility opengl ssl openssl-linked dbus audio-backend no-qml-debug directwrite native-gestures qpa iconv concurrent
+
+Name: Qt5 Core
+Description: Qt Core module
+Version: 5.6.3
+Libs: -L${libdir} -lQt5Cored 
+Libs.private: -lole32 -luuid -lws2_32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmpr -LC:\OpenSSL\openssl-1.0.2n_mingw492_32_static\lib -LC:\Qt\5.6.3\Src\qtbase\lib C:\Qt\5.6.3\Src\qtbase\lib\libqtpcred.a -LC:\OpenSSL\openssl-1.0.2n_mingw492_32_static\lib 
+Cflags: -I${includedir}/QtCore -I${includedir}
+

@@ -1,0 +1,14 @@
+prefix=C:/Qt/5.6.3/mingw49_32_release_static
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+
+Name: Qt5 XmlPatterns
+Description: Qt XmlPatterns module
+Version: 5.6.3
+Libs: -L${libdir} -lQt5XmlPatternsd 
+Libs.private: -LC:\Qt\5.6.3\Src\qtbase\lib C:\Qt\5.6.3\Src\qtbase\lib\libQt5Networkd.a -LC:\OpenSSL\openssl-1.0.2n_mingw492_32_static\lib -ldnsapi -liphlpapi C:\OpenSSL\openssl-1.0.2n_mingw492_32_static\lib\libssl.a C:\OpenSSL\openssl-1.0.2n_mingw492_32_static\lib\libcrypto.a -lgdi32 -lcrypt32 C:\Qt\5.6.3\Src\qtbase\lib\libQt5Cored.a -lole32 -luuid -lws2_32 -ladvapi32 -lshell32 -luser32 -lkernel32 -lmpr C:\Qt\5.6.3\Src\qtbase\lib\libqtpcred.a  
+Cflags: -I${includedir}/QtXmlPatterns -I${includedir}
+Requires: Qt5Core Qt5Network
+
