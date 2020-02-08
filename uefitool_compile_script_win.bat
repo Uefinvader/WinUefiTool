@@ -7,7 +7,7 @@ echo -----------------------
 echo.
 echo Checking requirements...
 
-for %%R in (mingw49_32_release_static, mingw492_32, UEFITool-new_engine) do (
+for %%R in (mingw49_32_release_static, mingw492_32, UEFITool) do (
 	if not exist %%R (
 		echo.
 		echo %%R not found!
@@ -19,7 +19,7 @@ for %%R in (mingw49_32_release_static, mingw492_32, UEFITool-new_engine) do (
 
 set QtStcDir=%cd%\mingw49_32_release_static
 set MingwDir=%cd%\mingw492_32
-set UTSrcDir=%cd%\UEFITool-new_engine
+set UTSrcDir=%cd%\UEFITool
 
 PATH = %QtStcDir%\bin;%MingwDir%\bin;
 

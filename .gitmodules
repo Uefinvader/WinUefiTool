@@ -1,0 +1,3 @@
+[submodule "UEFITool"]
+	path = UEFITool
+	url = https://github.com/Uefinvader/UEFITool.git
